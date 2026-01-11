@@ -1,16 +1,27 @@
 import { Instagram, Twitter, Linkedin, Youtube, Mail } from 'lucide-react';
-
 const Footer = () => {
-  const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: Mail, href: 'mailto:technova@college.edu', label: 'Email' },
-  ];
-
-  return (
-    <footer className="relative py-12 px-4 border-t border-border">
+  const socialLinks = [{
+    icon: Instagram,
+    href: '#',
+    label: 'Instagram'
+  }, {
+    icon: Twitter,
+    href: '#',
+    label: 'Twitter'
+  }, {
+    icon: Linkedin,
+    href: '#',
+    label: 'LinkedIn'
+  }, {
+    icon: Youtube,
+    href: '#',
+    label: 'YouTube'
+  }, {
+    icon: Mail,
+    href: 'mailto:technova@college.edu',
+    label: 'Email'
+  }];
+  return <footer className="relative py-12 px-4 border-t border-border">
       <div className="max-w-6xl mx-auto">
         {/* Logo and tagline */}
         <div className="text-center mb-8">
@@ -25,18 +36,7 @@ const Footer = () => {
         </div>
         
         {/* Social links */}
-        <div className="flex justify-center gap-4 mb-8">
-          {socialLinks.map((social) => (
-            <a
-              key={social.label}
-              href={social.href}
-              aria-label={social.label}
-              className="p-3 glass-card hover:neon-glow-cyan transition-all duration-300 group"
-            >
-              <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-          ))}
-        </div>
+        
         
         {/* Quick links */}
         <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
@@ -65,8 +65,6 @@ const Footer = () => {
         {/* Decorative line */}
         <div className="mt-8 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
