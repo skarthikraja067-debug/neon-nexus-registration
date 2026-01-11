@@ -99,9 +99,9 @@ const ParticleNetwork = () => {
         </bufferGeometry>
         <pointsMaterial
           size={0.08}
-          color="#00ffff"
+          color="#0099aa"
           transparent
-          opacity={0.8}
+          opacity={0.9}
           sizeAttenuation
         />
       </points>
@@ -116,9 +116,9 @@ const ParticleNetwork = () => {
           />
         </bufferGeometry>
         <lineBasicMaterial
-          color="#00ffff"
+          color="#0099aa"
           transparent
-          opacity={0.15}
+          opacity={0.25}
         />
       </lineSegments>
     </>
